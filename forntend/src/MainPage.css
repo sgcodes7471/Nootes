@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+*{
+    font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.main-notes-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.main-heading-wrapper{
+    margin: 5vh 0px 5vh 0px;
+}
+.main-heading{
+    font-size: 4rem;
+    width: 100vw;
+    text-align: center;
+}
+.main-sub-heading{
+    font-size: 1.2rem;
+    width: 100vw;
+    text-align: center;
+}
+.notes-section{
+    width: 25vw;
+    height: 35vh;
+    border: 2px solid bisque;
+    margin: 20px 2vw 20px 2vw;
+    padding: 10px 10px 10px 10px;
+    border-radius: 25px;
+    background-color: bisque;
+    box-shadow: -4px 4px 0px rgb(74, 74, 74);
+}
+.notes-heading textarea{
+    font-size: 2rem;
+    height: 15%;
+}
+.notes-content{
+    height: 60%;
+}
+.notes-footer{
+    display: flex;
+     color: rgb(101, 81, 56);
+}
+.notes-date{
+    width: 50%;
+    font-size: 1rem;
+    text-align: left;
+}
+.notes-del{
+    width: 15%;
+    text-align: left;
+}
+.notes-del button{
+    background-color: transparent;
+    color: rgb(101, 81, 56);
+    border: none;
+}
+.notes-new-notes{
+    background-color: rgba(127, 255, 150, 0.689);
+    border: 2px solid rgba(127, 255, 150, 0.689);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-new-notes-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 6rem;
+}
+.save-new-notes-btn{
+    background-color: transparent;
+    padding: 5px;
+    color: #000000;
+    font-size: 1.4rem;
+    border: none;
+    font-weight: bold;
+}
+textarea{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.main-logout-btn-wrapper{
+position: fixed;
+right: 10px;
+top: 10px;
+}
+.main-logout-btn{
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    padding: 5px 5px 5px 5px;
+}
+
+@media screen and (max-width:800px) {
+    .main-notes-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+    .notes-section{
+        width: 80vw;
+    }
+}
